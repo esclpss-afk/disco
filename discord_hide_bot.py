@@ -131,7 +131,7 @@ async def reconcile_all_guilds() -> None:
             print(f"Reconcile failed in guild {guild.name}: {error}")
 
 
-@tree.command(name="status", description="Check hidden-role bot status in this server.")
+@tree.command(name="status", description="h")
 async def status_command(interaction: discord.Interaction) -> None:
     guild_name = interaction.guild.name if interaction.guild else "DM/Unknown"
     actor = f"{interaction.user} ({interaction.user.id})"
